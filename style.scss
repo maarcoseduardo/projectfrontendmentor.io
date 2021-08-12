@@ -1,0 +1,169 @@
+/*Variables*/
+
+$backgroundColorRose: hsl(0, 100%, 74%);
+$whiteColorDefault: #fff;
+$colorGreen: hsl(154, 59%, 51%);
+$colorViolet: hsl(248, 32%, 49%);
+$colorDarkBlue: hsl(249, 10%, 26%);
+$colorGrey: hsl(246, 25%, 77%);
+
+
+/*Initial Settings*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Desktop */
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: $backgroundColorRose;
+    opacity: 0.8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: "principal-title sign-here";
+
+    .bg-image{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+    
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.principal-title{
+    margin: 35% 10% 0 13%;
+
+    h1{
+        color: $whiteColorDefault;
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+        max-width: 500px;
+    }
+    
+    h3{
+        color: $whiteColorDefault;
+        font-size: 1.2rem;
+        max-width: 550px;
+    }
+}
+
+.sign-here{
+
+    margin-top: 8%;
+
+    .spotlight-button{
+        margin: 70px 0 45px 107px;
+
+        a{
+            color: $whiteColorDefault;
+            padding: 10px 40px;
+            background-color: $colorViolet;
+            border-radius: 10px;
+        }
+    }
+
+    .register{
+        margin: 0 0 0px 97px;
+        padding-top: 5px;
+        width: 430px;
+        height: 350px;
+        background: $whiteColorDefault;
+        border-radius: 10px;
+        box-shadow: 0px 2px 0 1px rgba(0, 0, 0, 0.281);
+
+        input{
+            display: block;
+            width: 360px;
+            height: 35px;
+            margin: 20px auto 0 auto;
+        }
+
+        .buttonAndTerms{
+            margin: 25px auto 0 auto;
+
+            a{
+                margin-left: 34px;
+                padding: 8px 103px;
+                background: $colorGreen;
+                border-radius: 10px;
+                color: $whiteColorDefault;
+            }
+
+            p{
+                margin-top: 20px;
+                margin-left: 20px;
+                font-size: 12px;
+                max-width: 500px;
+                color: $colorGrey;
+            }
+
+            .terms{
+                color: red;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/* Mobile*/
+@media only screen and (min-width: 375px) and (max-width: 812px){
+
+    .container{
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        .bg-image{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .principal-title{
+        margin: 0 60px 80px 90px;
+
+        h1{
+            padding-top: 60px;
+            color: $whiteColorDefault;
+            font-size: 2rem;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        h3{
+            text-align: center;
+            max-width: 300px;
+            margin-right: 30px;
+        }
+    }
+
+    .sign-here{
+        margin-top: 8%;
+        padding-bottom: 30px;
+       
+        .spotlight-button{
+            margin: 10px 0 70px 50px;
+
+            a{
+                padding: 40px 30px;
+            }
+        }
+
+        .register{
+            margin: 10px 0 0 30px; 
+            }
+        }
+    }

@@ -1,0 +1,152 @@
+/*Variables*/
+/*Initial Settings*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Desktop */
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ff7a7a;
+  opacity: 0.8;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-area: "principal-title sign-here";
+}
+
+.container .bg-image {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.container .bg-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.principal-title {
+  margin: 35% 10% 0 13%;
+}
+
+.principal-title h1 {
+  color: #fff;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  max-width: 500px;
+}
+
+.principal-title h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  max-width: 550px;
+}
+
+.sign-here {
+  margin-top: 8%;
+}
+
+.sign-here .spotlight-button {
+  margin: 70px 0 45px 107px;
+}
+
+.sign-here .spotlight-button a {
+  color: #fff;
+  padding: 10px 40px;
+  background-color: #6055a5;
+  border-radius: 10px;
+}
+
+.sign-here .register {
+  margin: 0 0 0px 97px;
+  padding-top: 5px;
+  width: 430px;
+  height: 350px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 0 1px rgba(0, 0, 0, 0.281);
+          box-shadow: 0px 2px 0 1px rgba(0, 0, 0, 0.281);
+}
+
+.sign-here .register input {
+  display: block;
+  width: 360px;
+  height: 35px;
+  margin: 20px auto 0 auto;
+}
+
+.sign-here .register .buttonAndTerms {
+  margin: 25px auto 0 auto;
+}
+
+.sign-here .register .buttonAndTerms a {
+  margin-left: 34px;
+  padding: 8px 103px;
+  background: #38cc8c;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.sign-here .register .buttonAndTerms p {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 12px;
+  max-width: 500px;
+  color: #b9b6d3;
+}
+
+.sign-here .register .buttonAndTerms .terms {
+  color: red;
+  font-weight: bold;
+}
+
+/* Mobile*/
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  .container {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .container .bg-image {
+    width: 100%;
+    height: 100%;
+  }
+  .principal-title {
+    margin: 0 60px 80px 90px;
+  }
+  .principal-title h1 {
+    padding-top: 60px;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    max-width: 300px;
+  }
+  .principal-title h3 {
+    text-align: center;
+    max-width: 300px;
+    margin-right: 30px;
+  }
+  .sign-here {
+    margin-top: 8%;
+    padding-bottom: 30px;
+  }
+  .sign-here .spotlight-button {
+    margin: 10px 0 70px 50px;
+  }
+  .sign-here .spotlight-button a {
+    padding: 40px 30px;
+  }
+  .sign-here .register {
+    margin: 10px 0 0 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
